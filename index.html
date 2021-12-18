@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PT.Once Sejahtera</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="myLogo">
+            <img class="logo" src="logo4.png">
+            <h2 class="title-logo">PT.Once Sejahtera</h2>
+        </div>
+
+        <div class="myInput">
+            <label>Nama Pelanggan : </label>
+            <input type="text" name="nama" placeholder="Input Nama" id="idNama"> <br>
+
+            <label>Kategori : </label>
+            <select name="kategori" id="idKategori">
+                <option value="Sosial">Sosial</option>
+                <option value="Rumah">Rumah</option>
+                <option value="Apartemen">Apartemen</option>
+                <option value="Industri">Industri</option>
+                <option value="Villa">Villa</option>
+            </select> <br>
+
+            <label>Jumlah Pemakaian : </label>
+            <input type="number" name="pemakaian" placeholder="Input Jumlah Pemakaian" id="idPemakaian">
+
+            <br>
+            <button type="button" id="myButton">Proses</button>
+
+            <script src="java.js">
+            </script>
+
+
+        </div>
+
+        <div class="tagihan" onload="Function()">
+
+            <h1 class="myTitle">TAGIHAN LISTRIK</h2>
+
+                <table border=1 class=tabel>
+                    <tr>
+                        <td>Nama Pelanggan</td>
+                        <td> :<span id="showNama"></span> </td>
+                    </tr>
+                    <tr>
+                        <td>Kategori</td>
+                        <td> :<span id="showKategori"></span> </td>
+                    </tr>
+                    <tr>
+                        <td>Jumlah Pemakaian</td>
+                        <td> :<span id="showPemakaian"></span> </td>
+                    </tr>
+                </table>
+        </div>
+
+        <div id="Rincian">
+            <h1 class="myTitle">Rincian Tagihan</h1>
+            <table id=Nomor border=0>
+
+            </table>
+            <p>_______________________________________________</p>
+            <table>
+                <div id=totalTarif onload="Function()">
+                    <tr>
+                        <td> Subtotal : <span id=idSubTotal></span> </td>
+                    </tr>
+                    <tr>
+                        <td> Pajak : <span id=idPajak></span> </td>
+                    </tr>
+                    <tr>
+                        <td> Bayar : <span id=idPembayaran></span> </td>
+                    </tr>
+                </div>
+            </table>
+        </div>
+    </div>
+</body>
+
+</html>

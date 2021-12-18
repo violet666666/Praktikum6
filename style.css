@@ -1,0 +1,41 @@
+.container {
+    padding: 20px;
+}
+
+* {
+    text-align: left;
+    font-family: 'Lato', sans-serif;
+    color: #000000;
+}
+
+input,
+select,
+button {
+    background-color: #E5BACE;
+    color: #000000;
+}
+
+html {
+    background-color: #E1F2F7;
+}
+
+.myLogo {
+    display: flex;
+    justify-content: left;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+}
+
+table {
+    margin-top: 5px;
+    margin-left: left;
+}
+
+.myTitle,
+.title-logo {
+    margin-top: 10px;
+    color: #000000;
+}
